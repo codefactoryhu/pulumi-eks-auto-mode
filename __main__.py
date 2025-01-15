@@ -1,4 +1,4 @@
-from src.modules.network import vpc
+from src.modules.vpc import vpc
 from src.modules.eks import eks
 
 vpc = vpc.CreateVPC()

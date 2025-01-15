@@ -1,0 +1,18 @@
+encryptionsalt: v1:gp6xkuqZp7I=:v1:BgpglIG1KC1W03NO:Snr3Pz+ZyM9wqRVOQC58RwsGjzjyig==
+config:
+  aws:region: eu-west-1
+
+  # VPC settings
+  vpc:vpc_ipv4_cidr_block: "10.0.0.0/16"
+  vpc:vpc_enable_dns_hostnames: True
+  vpc:vpc_enable_dns_support: True
+
+  # Cluster settings
+  eks:version: "1.31"
+  eks:clusterLogging:
+    - api
+    - audit
+    - authenticator
+    - controllerManager
+    - scheduler
+  eks:upgradePolicy: "STANDARD" # Valid values are EXTENDED, STANDARD

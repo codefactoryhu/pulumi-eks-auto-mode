@@ -8,7 +8,7 @@ config:
   vpc:vpc_enable_dns_support: True
 
   # Cluster settings
-  eks:version: "1.31"
+  eks:version: "1.32"
   eks:clusterLogging:
     - api
     - audit
